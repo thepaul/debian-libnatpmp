@@ -1,0 +1,5 @@
+libnatpmp (20101211-1) experimental; urgency=low
+
+  * Initial release. (Closes: #608280)
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 29 Dec 2010 21:25:44 +0800

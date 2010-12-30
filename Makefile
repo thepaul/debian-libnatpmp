@@ -6,7 +6,7 @@
 
 OS = $(shell uname -s)
 CC = gcc
-INSTALL = install
+INSTALL = install -D
 
 # APIVERSION is used in soname
 APIVERSION = 0

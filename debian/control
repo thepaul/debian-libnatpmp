@@ -3,7 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Thomas Goirand <zigo@debian.org>
 Build-Depends: debhelper (>= 7), python
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Vcs-Browser: http://git.debian.org/?p=users/zigo/libnatpmp.git
 Vcs-Git: http://git.debian.org/git/users/zigo/libnatpmp.git
 Homepage: http://miniupnp.free.fr/
@@ -30,7 +30,7 @@ Description: a portable and fully compliant implementation of NAT-PMP
 Package: libnatpmp-dev
 Architecture: any
 Section: libdevel
-Depends: ${misc:Depends}, ${shlibs:Depends}, python
+Depends: ${misc:Depends}, ${shlibs:Depends}, libnatpmp0 (= ${binary:Version}), python
 Recommends: minissdpd
 Description: a portable and fully compliant implementation of NAT-PMP (dev files)
  NAT-PMP is the direct concurrent to the UPnP IGD specification. It is

@@ -1,3 +1,11 @@
+libnatpmp (20101211-2) unstable; urgency=low
+
+  * libnatpmp-dev now depends on libnatpmp0 (= ${binary:Version}).
+  * This time, uploading to SID.
+  * Standards-Version is now 3.9.2.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 11 Mar 2011 19:50:51 +0800
+
 libnatpmp (20101211-1) experimental; urgency=low
 
   * Initial release. (Closes: #608280)

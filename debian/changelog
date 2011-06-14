@@ -1,8 +1,10 @@
 libnatpmp (20101211-2) unstable; urgency=low
 
-  * libnatpmp-dev now depends on libnatpmp0 (= ${binary:Version}).
+  * libnatpmp-dev now depends on libnatpmp0 (= ${binary:Version})
+  (Closes: #630335).
   * This time, uploading to SID.
   * Standards-Version is now 3.9.2.
+  * Doesn't Recommends minissdpd, but Suggests it now (Closes: #630334).
 
  -- Thomas Goirand <zigo@debian.org>  Fri, 11 Mar 2011 19:50:51 +0800
 

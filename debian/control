@@ -11,7 +11,7 @@ Homepage: http://miniupnp.free.fr/
 Package: libnatpmp0
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, python
-Recommends: minissdpd
+Suggests: minissdpd
 Description: a portable and fully compliant implementation of NAT-PMP
  NAT-PMP is the direct concurrent to the UPnP IGD specification. It is
  providing a way to do NAT traversal. It is part of the Bonjour protocol

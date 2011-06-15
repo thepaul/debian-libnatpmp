@@ -5,8 +5,12 @@ libnatpmp (20101211-2) unstable; urgency=low
   * This time, uploading to SID.
   * Standards-Version is now 3.9.2.
   * Doesn't Recommends minissdpd, but Suggests it now (Closes: #630334).
+  * Updated Makefile to use LDFLAGS = -Wl,--no-undefined instead of just
+  --no-undefined, as it wouldn't build otherwise.
+  * Removed the first word (an article) in the short description as it was
+  bothering lintian.
 
- -- Thomas Goirand <zigo@debian.org>  Fri, 11 Mar 2011 19:50:51 +0800
+ -- Thomas Goirand <zigo@debian.org>  Wed, 15 Jun 2011 21:30:24 +0800
 
 libnatpmp (20101211-1) experimental; urgency=low
 

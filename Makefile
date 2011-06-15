@@ -10,7 +10,7 @@ INSTALL = install -D
 
 # APIVERSION is used in soname
 APIVERSION = 0
-LDFLAGS = --no-undefined
+LDFLAGS = -Wl,--no-undefined
 CFLAGS = -O -fPIC -Wall -DENABLE_STRNATPMPERR
 
 LIBOBJS = natpmp.o getgateway.o

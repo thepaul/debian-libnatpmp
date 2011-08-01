@@ -1,4 +1,17 @@
-$Id: Changelog.txt,v 1.23 2010/05/21 08:22:05 nanard Exp $
+$Id: Changelog.txt,v 1.27 2011/06/17 22:57:47 nanard Exp $
+
+2011/06/18:
+  --no-undefined => -Wl,--no-undefined
+  adding a natpmpc.1 man page
+
+2011/05/19:
+  Small fix in libnatpmpmodule.c thanks to Manuel Mausz
+
+2011/01/03:
+  Added an argument to initnatpmp() in order to force the gateway to be used
+
+2011/01/01:
+  fix in make install
 
 2010/05/21:
   make install now working under MacOSX (and BSD)

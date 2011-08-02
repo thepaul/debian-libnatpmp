@@ -32,7 +32,7 @@ Description: portable and fully compliant implementation of NAT-PMP
 Package: libnatpmp-dev
 Architecture: any
 Section: libdevel
-Depends: ${misc:Depends}, ${shlibs:Depends}, libnatpmp0 (= ${binary:Version}), python
+Depends: ${misc:Depends}, ${shlibs:Depends}, libnatpmp1 (= ${binary:Version}), python
 Recommends: minissdpd
 Description: portable and fully compliant implementation of NAT-PMP (dev files)
  NAT-PMP is the direct concurrent to the UPnP IGD specification. It is

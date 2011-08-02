@@ -1,3 +1,12 @@
+libnatpmp (20110730-1) unstable; urgency=low
+
+  * New upstream release:
+  - Reviewed 3 clause BSD license on file headers (Closes: #633643).
+  * Renamed libnatpmp0 into libnatpmp1, as upstream did an ABI change,
+  consequently upgraded so version.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 03 Aug 2011 03:21:46 +0800
+
 libnatpmp (20101211-2) unstable; urgency=low
 
   * libnatpmp-dev now depends on libnatpmp0 (= ${binary:Version})

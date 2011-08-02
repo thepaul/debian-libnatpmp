@@ -8,9 +8,11 @@ Vcs-Browser: http://git.debian.org/?p=users/zigo/libnatpmp.git
 Vcs-Git: http://git.debian.org/git/users/zigo/libnatpmp.git
 Homepage: http://miniupnp.free.fr/
 
-Package: libnatpmp0
+Package: libnatpmp1
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, python
+Breaks: libnatpmp0
+Replaces: libnatpmp0
 Suggests: minissdpd
 Description: portable and fully compliant implementation of NAT-PMP
  NAT-PMP is the direct concurrent to the UPnP IGD specification. It is

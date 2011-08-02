@@ -1,3 +1,10 @@
+libnatpmp (20110730-2) unstable; urgency=low
+
+  * Renamed libnatpmp0.shlibs as libnatpmp1.shlibs.
+  * Moving the .a into the .dev package.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 03 Aug 2011 06:21:59 +0800
+
 libnatpmp (20110730-1) unstable; urgency=low
 
   * New upstream release:

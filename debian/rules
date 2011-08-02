@@ -34,6 +34,7 @@ install: build
 	mv $(CURDIR)/debian/libnatpmp1/usr/include $(CURDIR)/debian/libnatpmp-dev/usr
 	mkdir -p $(CURDIR)/debian/libnatpmp-dev/usr/lib
 	mv $(CURDIR)/debian/libnatpmp1/usr/lib/libnatpmp.so $(CURDIR)/debian/libnatpmp-dev/usr/lib
+	mv $(CURDIR)/debian/libnatpmp1/usr/lib/libnatpmp.a $(CURDIR)/debian/libnatpmp-dev/usr/lib
 
 binary-indep: build install
 

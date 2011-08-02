@@ -1,4 +1,4 @@
-# $Id: Makefile,v 1.17 2011/06/17 22:57:47 nanard Exp $
+# $Id: Makefile,v 1.18 2011/06/22 21:32:30 nanard Exp $
 # This Makefile is designed for use with GNU make
 # libnatpmp
 # (c) 2007-2011 Thomas Bernard
@@ -10,7 +10,7 @@ INSTALL = install
 
 # APIVERSION is used in soname
 APIVERSION = 1
-LDFLAGS = -Wl,--no-undefined
+#LDFLAGS = -Wl,--no-undefined
 CFLAGS = -O -fPIC -Wall -DENABLE_STRNATPMPERR
 
 LIBOBJS = natpmp.o getgateway.o
@@ -19,7 +19,7 @@ OBJS = $(LIBOBJS) testgetgateway.o natpmpc.o
 
 STATICLIB = libnatpmp.a
 ifeq ($(OS), Darwin)
-  SHAREDLIB = libnatpmp.dynlib
+  SHAREDLIB = libnatpmp.dylib
   SONAME = $(basename $(SHAREDLIB)).$(APIVERSION).dylib
   CFLAGS := -DMACOSX -D_DARWIN_C_SOURCE $(CFLAGS)
 else

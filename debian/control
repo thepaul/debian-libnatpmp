@@ -11,8 +11,8 @@ Homepage: http://miniupnp.free.fr/
 Package: libnatpmp1
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, python
+Breaks: libnatpmp0
 Replaces: libnatpmp0
-Conflicts: libnatpmp0
 Provides: libnatpmp0
 Suggests: minissdpd
 Description: portable and fully compliant implementation of NAT-PMP
@@ -34,7 +34,7 @@ Package: libnatpmp-dev
 Architecture: any
 Section: libdevel
 Depends: ${misc:Depends}, ${shlibs:Depends}, libnatpmp1 (= ${binary:Version}), python
-Replaces: libnatpmp0, libnatpmp1 (<< 20110730-2)
+Replaces: libnatpmp0
 Recommends: minissdpd
 Description: portable and fully compliant implementation of NAT-PMP (dev files)
  NAT-PMP is the direct concurrent to the UPnP IGD specification. It is

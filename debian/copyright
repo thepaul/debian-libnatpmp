@@ -1,21 +1,15 @@
-This package was first Debianized by Thomas Goirand <zigo@debian.org> on the
-Wed, 29 Dec 2010 21:25:44 +0800
-
-It was downloaded from:
-	http://miniupnp.free.fr/files/
-
-Upstream author:
-	Thomas BERNARD <miniupnp@free.fr>
+Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=173
+Upstream-Name: libnatpmp
+Upstream-Contact: Thomas Bernard <miniupnp@free.fr>
+Source: http://miniupnp.free.fr/files/
 
 Files: debian/*
 Copyright: (c) 2010, Thomas Goirand <zigo@debian.org>
-License: BSD
+License: 3 clauses BSD
 
 Files: *
 Copyright: (c) 2007-2009, Thomas BERNARD <miniupnp@free.fr>
-License: BSD
-
-BSD License:
+License: 3 clauses BSD
 
 	All rights reserved.
 

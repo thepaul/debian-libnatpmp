@@ -6,6 +6,7 @@ libnatpmp (20110730-1) unstable; urgency=low
   consequently upgraded so version.
   * Renamed libnatpmp0.shlibs as libnatpmp1.shlibs.
   * Moving the .a into the .dev package.
+  * debian/copyright is now in correct DEP5 format.
 
  -- Thomas Goirand <zigo@debian.org>  Wed, 03 Aug 2011 03:21:46 +0800
 

@@ -1,3 +1,9 @@
+libnatpmp (20110730-2) unstable; urgency=low
+
+  * libnatpmp-dev doesn't recommends minissdpd anymore (Closes: #630334).
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 06 Aug 2011 15:48:37 +0800
+
 libnatpmp (20110730-1) unstable; urgency=low
 
   * New upstream release:

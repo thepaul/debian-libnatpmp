@@ -1,8 +1,9 @@
-libnatpmp (20110730-2) unstable; urgency=low
+libnatpmp (20110808-1) unstable; urgency=low
 
+  * New upstream version 20110808, now building on kFreeBSD (Closes: #636786).
   * libnatpmp-dev doesn't recommends minissdpd anymore (Closes: #630334).
 
- -- Thomas Goirand <zigo@debian.org>  Sat, 06 Aug 2011 15:48:37 +0800
+ -- Thomas Goirand <zigo@debian.org>  Tue, 09 Aug 2011 17:09:53 +0800
 
 libnatpmp (20110730-1) unstable; urgency=low
 

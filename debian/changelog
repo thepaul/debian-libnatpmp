@@ -1,3 +1,9 @@
+libnatpmp (20110808-2) unstable; urgency=low
+
+  * Removes the Provides: libnatpmp0 (Closes: #638828).
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 22 Aug 2011 18:44:02 +0800
+
 libnatpmp (20110808-1) unstable; urgency=low
 
   * New upstream version 20110808, now building on kFreeBSD (Closes: #636786).

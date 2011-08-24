@@ -1,3 +1,11 @@
+libnatpmp (20110808-3) unstable; urgency=low
+
+  * Moves the natpmpc inside a new natpmp-utils package (Closes: #639084).
+  * Removes Debian specific natpmpc.1, since upstream integrated it in his
+  upstream tarball.
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 24 Aug 2011 12:02:12 +0800
+
 libnatpmp (20110808-2) unstable; urgency=low
 
   * Removes the Provides: libnatpmp0 (Closes: #638828).

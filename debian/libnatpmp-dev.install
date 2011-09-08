@@ -1,0 +1,3 @@
+usr/include
+usr/lib/libnatpmp*.so
+usr/lib/libnatpmp*.a

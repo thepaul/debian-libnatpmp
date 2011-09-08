@@ -2,7 +2,7 @@ Source: libnatpmp
 Section: net
 Priority: optional
 Maintainer: Thomas Goirand <zigo@debian.org>
-Build-Depends: debhelper (>= 7), python
+Build-Depends: debhelper (>= 7)
 Standards-Version: 3.9.2
 Vcs-Browser: http://git.debian.org/?p=users/zigo/libnatpmp.git
 Vcs-Git: http://git.debian.org/git/users/zigo/libnatpmp.git
@@ -10,10 +10,8 @@ Homepage: http://miniupnp.free.fr/
 
 Package: libnatpmp1
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, python
-Breaks: libnatpmp0
-Replaces: libnatpmp0
-Suggests: minissdpd
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Suggests: natpmp-utils, minissdpd
 Description: portable and fully compliant implementation of NAT-PMP
  NAT-PMP is the direct concurrent to the UPnP IGD specification. It is
  providing a way to do NAT traversal. It is part of the Bonjour protocol
@@ -32,8 +30,7 @@ Description: portable and fully compliant implementation of NAT-PMP
 Package: libnatpmp-dev
 Architecture: any
 Section: libdevel
-Depends: ${misc:Depends}, ${shlibs:Depends}, libnatpmp1 (= ${binary:Version}), python
-Replaces: libnatpmp0
+Depends: ${misc:Depends}, libnatpmp1 (= ${binary:Version})
 Description: portable and fully compliant implementation of NAT-PMP (dev files)
  NAT-PMP is the direct concurrent to the UPnP IGD specification. It is
  providing a way to do NAT traversal. It is part of the Bonjour protocol
@@ -47,12 +44,12 @@ Description: portable and fully compliant implementation of NAT-PMP (dev files)
  blocking sockets and all calls of the API are asynchronous. It is therefore
  very easy to integrate the NAT-PMP code to any event driven code. 
  .
- This package contains development files needed to build using libnatpmp
+ This package contains development files needed to build using libnatpmp.
 
 Package: natpmp-utils
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Replaces: libnatpmp0 (<= 20110808-2)
+Replaces: libnatpmp0, libnatpmp1 (<= 20110808-2)
 Description: portable and fully compliant implementation of NAT-PMP (userland tool)
  NAT-PMP is the direct concurrent to the UPnP IGD specification. It is
  providing a way to do NAT traversal. It is part of the Bonjour protocol

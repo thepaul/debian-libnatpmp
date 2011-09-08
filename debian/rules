@@ -28,24 +28,17 @@ install: build
 	dh_testdir
 	dh_testroot
 	dh_prep
-	$(MAKE) install PREFIX=$(CURDIR)/debian/libnatpmp1
-	# Move the development files in its corresponding separate package folder.
-	mkdir -p $(CURDIR)/debian/libnatpmp-dev/usr
-	mv $(CURDIR)/debian/libnatpmp1/usr/include $(CURDIR)/debian/libnatpmp-dev/usr
-	mkdir -p $(CURDIR)/debian/libnatpmp-dev/usr/lib
-	mv $(CURDIR)/debian/libnatpmp1/usr/lib/libnatpmp.so $(CURDIR)/debian/libnatpmp-dev/usr/lib
-	mv $(CURDIR)/debian/libnatpmp1/usr/lib/libnatpmp.a $(CURDIR)/debian/libnatpmp-dev/usr/lib
-	mkdir -p $(CURDIR)/debian/lnatpmp-utils/usr
-	mv $(CURDIR)/debian/libnatpmp1/usr/bin $(CURDIR)/debian/lnatpmp-utils/usr
+	$(MAKE) install PREFIX=$(CURDIR)/debian/tmp
 
 binary-indep: build install
 
 binary-arch: build install
 	dh_testdir
 	dh_testroot
-	dh_installchangelogs Changelog.txt
-	dh_installdocs
+	dh_installdocs --link-doc=libnatpmp1
+	dh_installchangelogs
 	dh_installman
+	dh_install
 	dh_strip
 	dh_compress
 	dh_makeshlibs

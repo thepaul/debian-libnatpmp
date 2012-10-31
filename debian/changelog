@@ -1,3 +1,12 @@
+libnatpmp (20120821-0.1~nmu1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * New upstream version 20120821.
+  * Updated packaging, standards-version to debhelper 9 and 3.9.3
+  * Added packaging for python-libnatpmp
+
+ -- paul cannon <pik@debian.org>  Wed, 31 Oct 2012 11:55:24 -0600
+
 libnatpmp (20110808-3) unstable; urgency=low
 
   [ Thomas Goirand ]

@@ -2,8 +2,8 @@ Source: libnatpmp
 Section: net
 Priority: optional
 Maintainer: Thomas Goirand <zigo@debian.org>
-Build-Depends: debhelper (>= 7)
-Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.3
 Vcs-Browser: http://git.debian.org/?p=users/zigo/libnatpmp.git
 Vcs-Git: http://git.debian.org/git/users/zigo/libnatpmp.git
 Homepage: http://miniupnp.free.fr/

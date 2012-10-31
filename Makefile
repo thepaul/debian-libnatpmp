@@ -91,7 +91,7 @@ $(SHAREDLIB):	$(LIBOBJS)
 ifeq ($(OS), Darwin)
 	$(CC) -dynamiclib -Wl,-install_name,$(SONAME) -o $@ $^
 else
-	$(CC) -shared -Wl,-soname,$(SONAME) -o $@ $^
+	$(CC) -shared -Wl,-soname,$(SONAME) $(LDFLAGS) -o $@ $^
 endif
 
 # DO NOT DELETE

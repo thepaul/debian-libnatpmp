@@ -1,10 +1,23 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@
+	dh $@ --with python2 --buildsystem=python_distutils
+
+# we'll use the dh_auto_* bits to ease the python building, since it can
+# get that right, and specify the Makefile parts ourselves (it's easy,
+# and dh_auto_* doesn't get it quite right anyway)
+
+override_dh_auto_clean:
+	$(MAKE) clean
+	dh_auto_clean
+
+override_dh_auto_build:
+	$(MAKE)
+	dh_auto_build
 
 override_dh_auto_install:
 	$(MAKE) install PREFIX=$(CURDIR)/debian/tmp
+	dh_auto_install
 
 override_dh_installdocs:
 	dh_installdocs --link-doc=libnatpmp1

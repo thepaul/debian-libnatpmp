@@ -1,6 +1,6 @@
-/* $Id: wingettimeofday.c,v 1.4 2011/07/15 08:30:11 nanard Exp $ */
+/* $Id: wingettimeofday.c,v 1.5 2012/03/05 19:38:37 nanard Exp $ */
 /* libnatpmp
-Copyright (c) 2007-2011, Thomas BERNARD 
+Copyright (c) 2007-2011, Thomas BERNARD
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -42,7 +42,7 @@ typedef struct _FILETIME {
 } FILETIME;
 
 void __stdcall GetSystemTimeAsFileTime(FILETIME*);
-  
+
 int gettimeofday(struct timeval* p, void* tz /* IGNORED */) {
   union {
    long long ns100; /*time since 1 Jan 1601 in 100ns units */

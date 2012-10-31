@@ -1,6 +1,6 @@
-/* $Id: getgateway.h,v 1.5 2011/07/15 08:30:11 nanard Exp $ */
+/* $Id: getgateway.h,v 1.6 2012/03/05 19:38:37 nanard Exp $ */
 /* libnatpmp
-Copyright (c) 2007-2011, Thomas BERNARD 
+Copyright (c) 2007-2011, Thomas BERNARD
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
